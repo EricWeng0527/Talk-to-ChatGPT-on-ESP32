@@ -51,14 +51,20 @@ This project allows you to interact with ChatGPT using an ESP32, capturing audio
 
     print('Connected to Wi-Fi:', wlan.ifconfig())
     ```
-2. **Put GPT-on-ESP32.py on your ESP32**
-
-3. **Run the GPT-on-ESP32.py**:
+    
+2. **Change your server IP**
+   ```python
+    server_url = 'http://ip-to-your-server:8000/whisper'
+   ```
+   
+4. **Put GPT-on-ESP32.py on your ESP32**
+ 
+5. **Run the GPT-on-ESP32.py**:
     ```bash
     python GPT-on-ESP32.py
     ```
-
-4. **Record Audio**:
+ 
+6. **Record Audio**:
 press the button and you have 5 seconds to talk
 
 5. **Waiting for Response**:
